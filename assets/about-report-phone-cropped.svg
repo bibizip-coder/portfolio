@@ -1,0 +1,50 @@
+<svg width="768" height="1536" viewBox="0 0 768 1536" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="768" height="1536" fill="#000"/>
+  <rect x="18" y="18" width="732" height="1500" rx="72" fill="#fff"/>
+  <rect x="18" y="520" width="732" height="998" rx="0" fill="#F4F4F4"/>
+  <text x="84" y="68" font-family="Arial, sans-serif" font-size="31" font-weight="700" fill="#111">9:41</text>
+  <rect x="664" y="50" width="12" height="20" rx="2" fill="#111"/><rect x="682" y="42" width="12" height="28" rx="2" fill="#111"/><rect x="700" y="36" width="12" height="34" rx="2" fill="#111"/>
+  <path d="M728 48c10 0 18 8 18 18v8c0 10-8 18-18 18h-33c-10 0-18-8-18-18v-8c0-10 8-18 18-18h33zm-33 6c-6 0-12 5-12 12v8c0 7 6 12 12 12h33c7 0 12-5 12-12v-8c0-7-5-12-12-12h-33z" transform="translate(-38 -2)" fill="#111"/>
+  <text x="66" y="158" font-family="Arial, sans-serif" font-size="44" fill="#111">←</text>
+  <text x="284" y="158" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#111">리포트 상세</text>
+  <rect x="18" y="222" width="732" height="1" fill="#F0F0F0"/>
+  <text x="60" y="286" font-family="Arial, sans-serif" font-size="26" fill="#727B87">2025.06.14 15:58</text>
+  <text x="668" y="286" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#24282B">98점</text>
+  <text x="60" y="344" font-family="Arial, sans-serif" font-size="32" font-weight="700" fill="#24282B">투자상품 손실·책임 소재 따지는 고객</text>
+  <rect x="60" y="407" width="134" height="38" rx="19" fill="#F3F3F3"/><text x="78" y="433" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#7A828D">AI 롤플레이</text>
+  <rect x="205" y="407" width="68" height="38" rx="19" fill="#F3F3F3"/><text x="224" y="433" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#7A828D">영상</text>
+  <rect x="600" y="407" width="122" height="38" rx="19" fill="#F3F3F3"/><text x="621" y="433" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#7A828D">53회 진행</text>
+  <rect x="18" y="485" width="732" height="7" fill="#E8ECEF"/>
+  <text x="101" y="547" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#24282B">대화 평가</text>
+  <text x="326" y="547" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#6E7783">음성 평가</text>
+  <text x="554" y="547" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#6E7783">표정 평가</text>
+  <rect x="66" y="582" width="178" height="3" fill="#111"/>
+  <text x="61" y="662" font-family="Arial, sans-serif" font-size="40" fill="#6964FF">✦</text>
+  <text x="119" y="664" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#111">AI 요약</text>
+  <text x="60" y="722" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#4944FE">나의 교육은 전반적으로 어땠나요?</text>
+  <text x="60" y="788" font-family="Arial, sans-serif" font-size="31" fill="#24282B">반갑게 맞이하고 맞춤형 제안을 시도한 점은 긍정적이</text>
+  <rect x="60" y="971" width="648" height="361" rx="34" fill="#fff"/>
+  <text x="101" y="1044" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#111">🎯 미션 달성</text>
+  <text x="558" y="1044" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#24282B">4/5 ︿</text>
+  <g font-family="Arial, sans-serif" font-size="24" font-weight="700">
+    <rect x="100" y="1096" width="568" height="76" rx="17" fill="#fff" stroke="#5B55FF" stroke-width="2.5"/><circle cx="140" cy="1134" r="20" fill="#4D48FF"/><text x="133" y="1143" fill="#fff">✓</text><text x="174" y="1129" fill="#24282B">투자 위험과 결과에 대해 공감 표시투자 위험</text><text x="174" y="1160" fill="#24282B">과 결과에 대해 공감 표시투자 위험과 결과에</text>
+    <rect x="100" y="1198" width="568" height="60" rx="17" fill="#fff" stroke="#5B55FF" stroke-width="2.5"/><circle cx="140" cy="1228" r="20" fill="#4D48FF"/><text x="133" y="1237" fill="#fff">✓</text><text x="174" y="1237" fill="#24282B">상품 안내 프로세스 &amp; 법적 책임 설명</text>
+    <rect x="100" y="1280" width="568" height="60" rx="17" fill="#fff" stroke="#DADDE0" stroke-width="2"/><circle cx="140" cy="1310" r="18" fill="none" stroke="#DADDE0" stroke-width="2"/><text x="133" y="1319" fill="#DADDE0">✓</text><text x="174" y="1319" fill="#24282B">보험에 대한 정확한 설명</text>
+    <rect x="100" y="1364" width="568" height="60" rx="17" fill="#fff" stroke="#5B55FF" stroke-width="2.5"/><circle cx="140" cy="1394" r="20" fill="#4D48FF"/><text x="133" y="1403" fill="#fff">✓</text><text x="174" y="1403" fill="#24282B">대안 상품/위기 관리 안내</text>
+    <rect x="100" y="1447" width="568" height="60" rx="17" fill="#fff" stroke="#5B55FF" stroke-width="2.5"/><circle cx="140" cy="1477" r="20" fill="#4D48FF"/><text x="133" y="1486" fill="#fff">✓</text><text x="174" y="1486" fill="#24282B">다음 만남을 기다리는 마무리 인사</text>
+  </g>
+  <rect x="60" y="1360" width="648" height="260" rx="34" fill="#fff"/>
+  <text x="100" y="1430" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#111">👦 AI 고객 평가</text>
+  <text x="490" y="1430" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#24282B">⭐ 4.5점 ︿</text>
+  <circle cx="134" cy="1504" r="36" fill="#E8EEF3"/>
+  <text x="105" y="1517" font-family="Arial, sans-serif" font-size="38">👩🏻‍🦱</text>
+  <text x="194" y="1496" font-family="Arial, sans-serif" font-size="25" font-weight="700" fill="#111">김예준</text>
+  <text x="280" y="1496" font-family="Arial, sans-serif" font-size="25" font-weight="700" fill="#FF55BD">20대·여</text>
+  <text x="102" y="1566" font-family="Arial, sans-serif" font-size="30" fill="#FFAF13">★ ★ ★</text>
+  <text x="245" y="1566" font-family="Arial, sans-serif" font-size="30" fill="#D6D8DA">★ ★</text>
+  <text x="100" y="1624" font-family="Arial, sans-serif" font-size="24" fill="#48515C">상담을 통해 실손보험의 필요성은 잘 이해되었고 신뢰가</text>
+  <text x="100" y="1658" font-family="Arial, sans-serif" font-size="24" fill="#48515C">갔습니다. 하지만 선택권에 대한 설명이나 다른 대안도</text>
+  <text x="100" y="1692" font-family="Arial, sans-serif" font-size="24" fill="#48515C">함께 들었으면 더 좋았을 것 같습니다.</text>
+  <text x="60" y="1462" font-family="Arial, sans-serif" font-size="24" fill="#727B87">ⓘ AI가 생성한 답변으로, 오류가 있을 수 있습니다.</text>
+  <rect x="263" y="1498" width="242" height="7" rx="4" fill="#111"/>
+</svg>
