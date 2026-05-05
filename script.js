@@ -1,5 +1,6 @@
 const pages = Array.from(document.querySelectorAll("[data-section]"));
 const dots = Array.from(document.querySelectorAll(".scroll-indicator span"));
+const projectNav = document.querySelector(".project-nav");
 const navLinks = Array.from(document.querySelectorAll(".project-nav a"));
 const scroller = document.querySelector(".snap-pages");
 let currentIndex = -1;
@@ -28,6 +29,10 @@ const setActivePage = (index) => {
   navLinks.forEach((link) => {
     link.classList.toggle("active", link.dataset.navSection === navSection);
   });
+
+  if (projectNav) {
+    projectNav.classList.toggle("is-light", index === 3);
+  }
 };
 
 if (scroller) {

@@ -399,6 +399,10 @@ a {
   pointer-events: auto;
 }
 
+.project-nav.is-light {
+  color: #ffffff;
+}
+
 .project-nav a {
   font-weight: 400;
 }
