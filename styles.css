@@ -411,6 +411,68 @@ a {
   font-weight: 700;
 }
 
+.usage-status {
+  position: fixed;
+  right: 3.74vw;
+  bottom: 4.07vh;
+  z-index: 60;
+  display: grid;
+  grid-template-columns: auto auto minmax(84px, 8.2vw) auto;
+  align-items: center;
+  gap: 10px;
+  min-height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.18);
+  border-radius: 999px;
+  padding: 7px 11px;
+  color: #000000;
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(16px);
+  font-family: "MADE TOMMY", "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  font-size: clamp(10px, 0.625vw, 12px);
+  font-weight: 700;
+  line-height: 1;
+  pointer-events: none;
+}
+
+.usage-status.is-light {
+  border-color: rgba(255, 255, 255, 0.24);
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.34);
+}
+
+.usage-status__label {
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  font-weight: 800;
+}
+
+.usage-status__page,
+.usage-status__percent {
+  min-width: 35px;
+  text-align: right;
+}
+
+.usage-status__track {
+  position: relative;
+  display: block;
+  height: 4px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.16);
+}
+
+.usage-status.is-light .usage-status__track {
+  background: rgba(255, 255, 255, 0.24);
+}
+
+.usage-status__fill {
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 0%;
+  border-radius: inherit;
+  background: currentColor;
+  transition: width 180ms ease;
+}
+
 .project-copy {
   position: absolute;
   top: 26.39vh;
@@ -2312,6 +2374,592 @@ a {
   width: 67.2vw;
 }
 
+.page-knolly {
+  display: block;
+  padding: 0;
+  overflow: hidden;
+  color: #ffffff;
+  background:
+    radial-gradient(ellipse 43.02vw 75.97vh at 15.94vw -0.23vh, rgba(130, 72, 222, 0.3), rgba(130, 72, 222, 0) 100%),
+    radial-gradient(ellipse 43.02vw 75.97vh at 26.35vw 82.36vh, rgba(130, 72, 222, 0.14), rgba(130, 72, 222, 0) 100%),
+    radial-gradient(ellipse 52.94vw 93.47vh at 90.6vw 71.9vh, rgba(16, 228, 126, 0.2), rgba(16, 228, 126, 0) 100%),
+    #000000;
+}
+
+.knolly-mockup {
+  position: absolute;
+  top: 22.87vh;
+  left: 46.46vw;
+  z-index: 1;
+  display: block;
+  width: 68.54vw;
+  max-width: none;
+  height: auto;
+  object-fit: contain;
+}
+
+.knolly-copy {
+  position: absolute;
+  top: 23.89vh;
+  left: 3.8vw;
+  z-index: 2;
+}
+
+.knolly-type {
+  margin: 0 0 1.95vh;
+  color: #8b8b8b;
+  font-family: "MADE TOMMY", "Pretendard Variable", Pretendard, sans-serif;
+  font-size: clamp(13px, 1.042vw, 20px);
+  font-weight: 500;
+  line-height: 1;
+}
+
+.knolly-copy h2 {
+  margin: 0 0 6.76vh;
+  color: #ffffff;
+  font-family: "MADE TOMMY", "Pretendard Variable", Pretendard, sans-serif;
+  font-size: clamp(64px, 5.469vw, 105px);
+  font-weight: 700;
+  line-height: 0.76;
+  letter-spacing: -1.05px;
+}
+
+.knolly-title-en,
+.knolly-title-ko {
+  width: 35.05vw;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.4;
+}
+
+.knolly-title-en {
+  margin-bottom: 4px;
+  font-family: "Merriweather Sans", "Pretendard Variable", Pretendard, sans-serif;
+  font-size: clamp(18px, 1.771vw, 34px);
+  font-weight: 400;
+}
+
+.knolly-title-ko {
+  font-size: clamp(16px, 1.563vw, 30px);
+  font-weight: 400;
+  letter-spacing: -0.03em;
+}
+
+.knolly-meta {
+  position: absolute;
+  top: 74.81vh;
+  left: 3.8vw;
+  z-index: 2;
+  display: flex;
+  gap: 9.38vw;
+  color: #ffffff;
+  font-size: clamp(13px, 1.042vw, 20px);
+  line-height: 1.6;
+}
+
+.knolly-meta div {
+  display: grid;
+  align-content: start;
+  width: 7.86vw;
+}
+
+.knolly-meta div:nth-child(2) {
+  width: 5.83vw;
+}
+
+.knolly-meta div:nth-child(3) {
+  width: 10.2vw;
+}
+
+.knolly-meta b {
+  margin-bottom: 3.24vh;
+  font-weight: 800;
+}
+
+.knolly-meta span {
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.page-knolly-overview {
+  display: block;
+  padding: 0;
+  overflow: hidden;
+  color: #ffffff;
+  background: #000000;
+}
+
+.knolly-overview-logo {
+  position: absolute;
+  top: 40.37vh;
+  left: 15.99vw;
+  display: block;
+  width: 29.32vw;
+  height: auto;
+  aspect-ratio: 563 / 109.14;
+  object-fit: contain;
+}
+
+.knolly-overview-copy {
+  position: absolute;
+  top: 40.37vh;
+  left: 55.26vw;
+  width: 41.56vw;
+  color: #ffffff;
+}
+
+.knolly-overview-number {
+  margin: 0 0 2.43vh;
+  font-family: "MADE TOMMY", "Pretendard Variable", Pretendard, sans-serif;
+  font-size: clamp(13px, 1.042vw, 20px);
+  font-weight: 500;
+  line-height: 1;
+}
+
+.knolly-overview-copy h2 {
+  margin: 0 0 2.68vh;
+  font-family: "MADE TOMMY", "Pretendard Variable", Pretendard, sans-serif;
+  font-size: clamp(13px, 1.042vw, 20px);
+  font-weight: 500;
+  line-height: 1;
+}
+
+.knolly-overview-copy p:not(.knolly-overview-number) {
+  margin: 0 0 10px;
+  font-size: clamp(12px, 0.938vw, 18px);
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: -0.03em;
+  white-space: nowrap;
+}
+
+.knolly-overview-copy p:last-child {
+  margin-bottom: 0;
+}
+
+.page-knolly-problem {
+  display: block;
+  padding: 0;
+  overflow: hidden;
+  color: #ffffff;
+  background: #000000;
+}
+
+.knolly-problem-copy {
+  position: absolute;
+  top: 19.35vh;
+  left: 5.1vw;
+  z-index: 2;
+  width: 29.74vw;
+  color: #ffffff;
+}
+
+.knolly-problem-number {
+  margin: 0 0 2.43vh;
+  font-family: "MADE TOMMY", "Pretendard Variable", Pretendard, sans-serif;
+  font-size: clamp(13px, 1.042vw, 20px);
+  font-weight: 500;
+  line-height: 1;
+}
+
+.knolly-problem-copy h2 {
+  margin: 0 0 4.35vh;
+  font-family: "MADE TOMMY", "Pretendard Variable", Pretendard, sans-serif;
+  font-size: clamp(13px, 1.042vw, 20px);
+  font-weight: 500;
+  line-height: 1;
+}
+
+.knolly-problem-copy p:not(.knolly-problem-number) {
+  margin: 0 0 10px;
+  font-size: clamp(12px, 0.938vw, 18px);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  white-space: nowrap;
+}
+
+.knolly-problem-copy .knolly-problem-spacer {
+  height: 16px;
+  margin: 0;
+}
+
+.knolly-problem-chart {
+  position: absolute;
+  top: 16.39vh;
+  left: 35.83vw;
+  display: block;
+  width: 57.7vw;
+  max-width: none;
+  height: auto;
+  object-fit: contain;
+}
+
+.page-knolly-product-lounge {
+  display: block;
+  padding: 0;
+  overflow: hidden;
+  color: #000000;
+  background: #f6f6f6;
+}
+
+.knolly-lounge-main,
+.knolly-lounge-search-screen,
+.knolly-lounge-market {
+  position: absolute;
+  display: block;
+  max-width: none;
+  height: auto;
+  object-fit: contain;
+}
+
+.knolly-lounge-main {
+  top: -4.81vh;
+  left: 7.71vw;
+  width: 21.3vw;
+}
+
+.knolly-lounge-search-screen {
+  top: 20.19vh;
+  left: 33.07vw;
+  width: 13.28vw;
+}
+
+.knolly-lounge-market {
+  top: 20.19vh;
+  left: 55.73vw;
+  width: 44.53vw;
+}
+
+.knolly-lounge-search {
+  position: absolute;
+  top: 11.94vh;
+  left: 33.07vw;
+  color: #000000;
+}
+
+.knolly-lounge-search h2 {
+  margin: 0 0 2.22vh;
+  font-size: clamp(13px, 1.042vw, 20px);
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+
+.knolly-lounge-search p {
+  margin: 0 0 4px;
+  font-size: clamp(11px, 0.833vw, 16px);
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  white-space: nowrap;
+}
+
+.knolly-lounge-arrow {
+  position: absolute;
+  top: 12.5vh;
+  left: 28.39vw;
+  width: 4.01vw;
+  height: 0;
+  border-top: 1px solid #000000;
+}
+
+.knolly-lounge-arrow::before,
+.knolly-lounge-arrow::after {
+  content: "";
+  position: absolute;
+  top: -3px;
+  display: block;
+  width: 5px;
+  height: 5px;
+  border-radius: 999px;
+  background: #000000;
+}
+
+.knolly-lounge-arrow::before {
+  left: 0;
+}
+
+.knolly-lounge-arrow::after {
+  right: 0;
+}
+
+.knolly-lounge-footer {
+  position: absolute;
+  top: 87.13vh;
+  left: 4.74vw;
+  display: flex;
+  align-items: flex-start;
+  gap: 7.4vw;
+  color: #000000;
+}
+
+.knolly-lounge-kicker {
+  display: flex;
+  gap: 1.51vw;
+  align-items: flex-start;
+  font-family: "MADE TOMMY", "Pretendard Variable", Pretendard, sans-serif;
+  font-size: clamp(13px, 1.042vw, 20px);
+  font-weight: 500;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.knolly-lounge-kicker b {
+  font-weight: 500;
+}
+
+.knolly-lounge-description {
+  font-size: clamp(12px, 0.938vw, 18px);
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.knolly-lounge-description p {
+  margin: 0 0 10px;
+  white-space: nowrap;
+}
+
+.page-knolly-product-profile {
+  display: block;
+  padding: 0;
+  overflow: hidden;
+  color: #000000;
+  background: #f6f6f6;
+}
+
+.knolly-profile-header {
+  position: absolute;
+  top: 5.74vh;
+  left: 4.74vw;
+  display: flex;
+  align-items: flex-start;
+  gap: 7.4vw;
+  color: #0b0b0b;
+}
+
+.knolly-profile-kicker {
+  display: flex;
+  gap: 1.51vw;
+  align-items: flex-start;
+  font-family: "MADE TOMMY", "Pretendard Variable", Pretendard, sans-serif;
+  font-size: clamp(13px, 1.042vw, 20px);
+  font-weight: 500;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.knolly-profile-kicker b {
+  font-weight: 500;
+}
+
+.knolly-profile-description {
+  font-size: clamp(12px, 0.938vw, 18px);
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.knolly-profile-description p {
+  margin: 0 0 10px;
+  white-space: nowrap;
+}
+
+.knolly-profile-main,
+.knolly-profile-market,
+.knolly-profile-empty {
+  position: absolute;
+  display: block;
+  max-width: none;
+  height: auto;
+  object-fit: contain;
+}
+
+.knolly-profile-main {
+  top: 17.22vh;
+  left: 8.96vw;
+  width: 29.37vw;
+}
+
+.knolly-profile-market {
+  top: 21.85vh;
+  left: 44.9vw;
+  width: 23.54vw;
+}
+
+.knolly-profile-empty {
+  top: 21.85vh;
+  left: 70.47vw;
+  width: 19.69vw;
+}
+
+.page-knolly-product-analytics {
+  display: block;
+  padding: 0;
+  overflow: hidden;
+  color: #000000;
+  background: #f6f6f6;
+}
+
+.knolly-analytics-shot {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.knolly-analytics-shot img {
+  position: absolute;
+  left: 0;
+  display: block;
+  width: 22.92vw;
+  max-width: none;
+  height: auto;
+}
+
+.knolly-analytics-shot-left {
+  left: 4.74vw;
+  width: 22.92vw;
+}
+
+.knolly-analytics-shot-left img {
+  top: -3.06vh;
+}
+
+.knolly-analytics-shot-center {
+  left: 29.95vw;
+  width: 22.92vw;
+}
+
+.knolly-analytics-shot-center img {
+  top: -103.7vh;
+}
+
+.knolly-analytics-copy {
+  position: absolute;
+  top: 11.67vh;
+  left: 63.99vw;
+  color: #000000;
+}
+
+.knolly-analytics-kicker {
+  display: flex;
+  gap: 1.67vw;
+  margin-bottom: 4.07vh;
+  font-family: "MADE TOMMY", "Pretendard Variable", Pretendard, sans-serif;
+  font-size: clamp(13px, 1.042vw, 20px);
+  font-weight: 500;
+  line-height: 1;
+}
+
+.knolly-analytics-kicker b {
+  font-weight: 500;
+}
+
+.knolly-analytics-copy p {
+  margin: 0 0 10px;
+  font-size: clamp(12px, 0.938vw, 18px);
+  line-height: 1;
+  letter-spacing: -0.02em;
+  white-space: nowrap;
+}
+
+.knolly-analytics-guide-one,
+.knolly-analytics-guide-two {
+  position: absolute;
+  display: block;
+  max-width: none;
+  height: auto;
+  object-fit: contain;
+}
+
+.knolly-analytics-guide-one {
+  top: 33.33vh;
+  left: 63.99vw;
+  width: 12.52vw;
+}
+
+.knolly-analytics-guide-two {
+  top: 33.33vh;
+  left: 79.32vw;
+  width: 12.52vw;
+}
+
+.page-knolly-design-system {
+  display: block;
+  padding: 0;
+  overflow: hidden;
+  color: #000000;
+  background: #f2f2f2;
+}
+
+.knolly-design-kicker {
+  position: absolute;
+  top: 11.67vh;
+  left: 4.74vw;
+  z-index: 2;
+  display: flex;
+  gap: 1.72vw;
+  align-items: flex-start;
+  font-family: "MADE TOMMY", "Pretendard Variable", Pretendard, sans-serif;
+  font-size: clamp(13px, 1.042vw, 20px);
+  font-weight: 500;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.knolly-design-kicker b {
+  font-weight: 500;
+}
+
+.knolly-design-board {
+  position: absolute;
+  top: 11.67vh;
+  left: 23.44vw;
+  display: block;
+  width: 80.76vw;
+  max-width: none;
+  height: auto;
+  object-fit: contain;
+}
+
+.page-knolly-design-inputs {
+  display: block;
+  padding: 0;
+  overflow: hidden;
+  color: #000000;
+  background: #f2f2f2;
+}
+
+.knolly-inputs-kicker {
+  position: absolute;
+  top: 11.67vh;
+  left: 4.74vw;
+  z-index: 2;
+  display: flex;
+  gap: 1.61vw;
+  align-items: flex-start;
+  font-family: "MADE TOMMY", "Pretendard Variable", Pretendard, sans-serif;
+  font-size: clamp(13px, 1.042vw, 20px);
+  font-weight: 500;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.knolly-inputs-kicker b {
+  font-weight: 500;
+}
+
+.knolly-inputs-board {
+  position: absolute;
+  top: 11.67vh;
+  left: 26.3vw;
+  display: block;
+  width: 67.82vw;
+  max-width: none;
+  height: auto;
+  object-fit: contain;
+}
+
 .page-product-home {
   display: block;
   padding: 0;
@@ -3423,6 +4071,21 @@ a {
     font-size: 11px;
   }
 
+  .usage-status {
+    right: 14px;
+    bottom: 14px;
+    grid-template-columns: auto auto minmax(62px, 18vw) auto;
+    gap: 8px;
+    min-height: 28px;
+    padding: 7px 9px;
+    font-size: 10px;
+  }
+
+  .usage-status__page,
+  .usage-status__percent {
+    min-width: 31px;
+  }
+
   .cover-archive {
     top: 11vh;
     left: 44vw;
@@ -4169,6 +4832,364 @@ a {
   .design-system-board {
     width: 186vw;
     margin-left: 0;
+  }
+
+  .page-knolly {
+    min-height: auto;
+    overflow: visible;
+    padding: 78px 20px 56px;
+  }
+
+  .knolly-copy,
+  .knolly-meta,
+  .knolly-mockup {
+    position: static;
+  }
+
+  .knolly-copy {
+    margin-bottom: 42px;
+  }
+
+  .knolly-type {
+    margin-bottom: 16px;
+    font-size: 13px;
+  }
+
+  .knolly-copy h2 {
+    margin-bottom: 34px;
+    font-size: clamp(58px, 17vw, 86px);
+  }
+
+  .knolly-title-en,
+  .knolly-title-ko {
+    width: auto;
+  }
+
+  .knolly-title-en {
+    font-size: 22px;
+  }
+
+  .knolly-title-ko {
+    font-size: 17px;
+    word-break: keep-all;
+  }
+
+  .knolly-mockup {
+    width: 176vw;
+    margin: 0 0 46px -34vw;
+  }
+
+  .knolly-meta {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 26px;
+    font-size: 14px;
+  }
+
+  .knolly-meta div,
+  .knolly-meta div:nth-child(2),
+  .knolly-meta div:nth-child(3) {
+    width: auto;
+  }
+
+  .knolly-meta b {
+    margin-bottom: 8px;
+  }
+
+  .page-knolly-overview {
+    min-height: auto;
+    overflow: visible;
+    padding: 96px 20px 72px;
+  }
+
+  .knolly-overview-logo,
+  .knolly-overview-copy {
+    position: static;
+  }
+
+  .knolly-overview-logo {
+    width: min(320px, 78vw);
+    aspect-ratio: 563 / 109.14;
+    margin: 0 0 72px;
+  }
+
+  .knolly-overview-copy {
+    width: auto;
+  }
+
+  .knolly-overview-number {
+    margin-bottom: 24px;
+    font-size: 14px;
+  }
+
+  .knolly-overview-copy h2 {
+    margin-bottom: 28px;
+    font-size: 14px;
+  }
+
+  .knolly-overview-copy p:not(.knolly-overview-number) {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.55;
+    white-space: normal;
+    word-break: keep-all;
+  }
+
+  .page-knolly-problem {
+    min-height: auto;
+    overflow: visible;
+    padding: 84px 20px 72px;
+  }
+
+  .knolly-problem-copy,
+  .knolly-problem-chart {
+    position: static;
+  }
+
+  .knolly-problem-copy {
+    width: auto;
+    margin-bottom: 42px;
+  }
+
+  .knolly-problem-number {
+    margin-bottom: 24px;
+    font-size: 14px;
+  }
+
+  .knolly-problem-copy h2 {
+    margin-bottom: 30px;
+    font-size: 14px;
+  }
+
+  .knolly-problem-copy p:not(.knolly-problem-number) {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.55;
+    white-space: normal;
+    word-break: keep-all;
+  }
+
+  .knolly-problem-copy .knolly-problem-spacer {
+    height: 14px;
+  }
+
+  .knolly-problem-chart {
+    width: min(100%, 680px);
+    margin: 0 auto;
+  }
+
+  .page-knolly-product-lounge {
+    min-height: auto;
+    overflow: visible;
+    padding: 42px 20px 72px;
+  }
+
+  .knolly-lounge-main,
+  .knolly-lounge-search-screen,
+  .knolly-lounge-market,
+  .knolly-lounge-search,
+  .knolly-lounge-arrow,
+  .knolly-lounge-footer {
+    position: static;
+  }
+
+  .knolly-lounge-main {
+    width: min(330px, 100%);
+    margin: 0 auto 34px;
+  }
+
+  .knolly-lounge-search {
+    margin-bottom: 22px;
+  }
+
+  .knolly-lounge-search h2 {
+    margin-bottom: 14px;
+    font-size: 14px;
+  }
+
+  .knolly-lounge-search p {
+    font-size: 13px;
+    line-height: 1.45;
+    white-space: normal;
+    word-break: keep-all;
+  }
+
+  .knolly-lounge-arrow {
+    display: none;
+  }
+
+  .knolly-lounge-search-screen {
+    width: min(260px, 78%);
+    margin: 0 auto 36px;
+  }
+
+  .knolly-lounge-market {
+    width: 180vw;
+    margin: 0 0 42px -34vw;
+  }
+
+  .knolly-lounge-footer {
+    display: block;
+  }
+
+  .knolly-lounge-kicker {
+    gap: 22px;
+    margin-bottom: 24px;
+    font-size: 14px;
+  }
+
+  .knolly-lounge-description {
+    font-size: 13px;
+    line-height: 1.45;
+    word-break: keep-all;
+  }
+
+  .knolly-lounge-description p {
+    white-space: normal;
+  }
+
+  .page-knolly-product-profile {
+    min-height: auto;
+    overflow: visible;
+    padding: 42px 20px 72px;
+  }
+
+  .knolly-profile-header,
+  .knolly-profile-main,
+  .knolly-profile-market,
+  .knolly-profile-empty {
+    position: static;
+  }
+
+  .knolly-profile-header {
+    display: block;
+    margin-bottom: 36px;
+  }
+
+  .knolly-profile-kicker {
+    gap: 22px;
+    margin-bottom: 24px;
+    font-size: 14px;
+  }
+
+  .knolly-profile-description {
+    font-size: 13px;
+    line-height: 1.45;
+    word-break: keep-all;
+  }
+
+  .knolly-profile-description p {
+    white-space: normal;
+  }
+
+  .knolly-profile-main {
+    width: min(360px, 100%);
+    margin: 0 auto 36px;
+  }
+
+  .knolly-profile-market,
+  .knolly-profile-empty {
+    width: min(310px, 86%);
+    margin: 0 auto 36px;
+  }
+
+  .page-knolly-product-analytics {
+    min-height: auto;
+    overflow: visible;
+    padding: 42px 20px 72px;
+  }
+
+  .knolly-analytics-shot,
+  .knolly-analytics-copy,
+  .knolly-analytics-guide-one,
+  .knolly-analytics-guide-two {
+    position: static;
+  }
+
+  .knolly-analytics-shot {
+    width: min(330px, 100%);
+    height: 720px;
+    margin: 0 auto 36px;
+    border-radius: 20px;
+  }
+
+  .knolly-analytics-shot img {
+    width: 100%;
+  }
+
+  .knolly-analytics-shot-left img {
+    top: -18px;
+  }
+
+  .knolly-analytics-shot-center img {
+    top: -1110px;
+  }
+
+  .knolly-analytics-copy {
+    margin-bottom: 34px;
+  }
+
+  .knolly-analytics-kicker {
+    gap: 22px;
+    margin-bottom: 24px;
+    font-size: 14px;
+  }
+
+  .knolly-analytics-copy p {
+    font-size: 13px;
+    line-height: 1.45;
+    white-space: normal;
+    word-break: keep-all;
+  }
+
+  .knolly-analytics-guide-one,
+  .knolly-analytics-guide-two {
+    width: min(300px, 88%);
+    margin: 0 auto 36px;
+  }
+
+  .page-knolly-design-system {
+    min-height: auto;
+    overflow: visible;
+    padding: 42px 0 72px;
+  }
+
+  .knolly-design-kicker,
+  .knolly-design-board {
+    position: static;
+  }
+
+  .knolly-design-kicker {
+    gap: 22px;
+    margin: 0 20px 32px;
+    font-size: 14px;
+  }
+
+  .knolly-design-board {
+    width: 186vw;
+    margin-left: 20px;
+  }
+
+  .page-knolly-design-inputs {
+    min-height: auto;
+    overflow: visible;
+    padding: 42px 0 72px;
+  }
+
+  .knolly-inputs-kicker,
+  .knolly-inputs-board {
+    position: static;
+  }
+
+  .knolly-inputs-kicker {
+    gap: 22px;
+    margin: 0 20px 32px;
+    font-size: 14px;
+  }
+
+  .knolly-inputs-board {
+    width: 186vw;
+    margin-left: 20px;
   }
 
   .page-product-detail-live {
