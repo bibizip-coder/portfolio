@@ -3,10 +3,6 @@ const dots = Array.from(document.querySelectorAll(".scroll-indicator span"));
 const projectNav = document.querySelector(".project-nav");
 const navLinks = Array.from(document.querySelectorAll(".project-nav a"));
 const scroller = document.querySelector(".snap-pages");
-const usageStatus = document.querySelector(".usage-status");
-const usagePage = document.querySelector("[data-usage-page]");
-const usageFill = document.querySelector("[data-usage-fill]");
-const usagePercent = document.querySelector("[data-usage-percent]");
 let currentIndex = -1;
 
 const navSectionForIndex = (index) => {
@@ -45,39 +41,10 @@ const setActivePage = (index) => {
     projectNav.classList.toggle("is-light", isLightNav);
   }
 
-  if (usageStatus) {
-    usageStatus.classList.toggle("is-light", isLightNav);
-  }
-
-  updateUsageStatus();
-};
-
-const formatPageCount = (value) => String(value).padStart(2, "0");
-
-const updateUsageStatus = () => {
-  if (!scroller || !usageStatus) return;
-
-  const maxScroll = scroller.scrollHeight - scroller.clientHeight;
-  const progress = maxScroll > 0 ? scroller.scrollTop / maxScroll : 0;
-  const percent = Math.round(Math.min(Math.max(progress, 0), 1) * 100);
-  const displayIndex = currentIndex >= 0 ? currentIndex + 1 : 1;
-
-  if (usagePage) {
-    usagePage.textContent = `${formatPageCount(displayIndex)}/${formatPageCount(pages.length)}`;
-  }
-
-  if (usageFill) {
-    usageFill.style.width = `${percent}%`;
-  }
-
-  if (usagePercent) {
-    usagePercent.textContent = `${percent}%`;
-  }
 };
 
 if (scroller) {
   scroller.classList.add("scroll-animate");
-  scroller.addEventListener("scroll", updateUsageStatus, { passive: true });
 }
 
 pages.forEach((page, pageIndex) => {
@@ -85,7 +52,6 @@ pages.forEach((page, pageIndex) => {
   page.classList.toggle("is-after", pageIndex > 0);
 });
 setActivePage(0);
-updateUsageStatus();
 
 const observer = new IntersectionObserver(
   (entries) => {
